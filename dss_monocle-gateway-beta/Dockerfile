@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base:16.3.1
+ARG BUILD_FROM=ghcr.io/hassio-addons/base:17.0.1
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -31,7 +31,7 @@ RUN apk add --no-cache curl
 RUN apk add --no-cache libstdc++
 RUN apk add --no-cache nano
 RUN apk add --no-cache net-tools
-RUN apk add --no-cache openssl=3.3.2-r0 
+RUN apk add --no-cache openssl
 RUN apk add --no-cache ca-certificates
 
 # ---------------------------------------
